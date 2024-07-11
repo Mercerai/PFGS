@@ -46,7 +46,10 @@ pip install ./submodules/diff-gaussian-rasterization
 ```
 You can customize `NUM_SEMANTIC_CHANNELS` in `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` for any number of feature dimension that you want: 
 
-### Install third_party
+### Build third_party optionally
+```
+python build_pkg.py
+```
 
 ## Dataset
 #### ScanNet:
