@@ -44,7 +44,7 @@ $ conda env create -f environment.yml
 ```shell
 pip install ./submodules/diff-gaussian-rasterization
 ```
-You can customize `NUM_SEMANTIC_CHANNELS` in `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` for any number of feature dimension that you want: 
+You can customize `NUM_SEMANTIC_CHANNELS` in `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` for any number of feature dimensions that you want. ⭐ Thanks to the diff-gaussian-rasterization code from [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs), which is a great help for our work.
 
 ### Build third_party optionally
 ```
@@ -53,7 +53,7 @@ python build_pkg.py
 
 ## Dataset
 #### ScanNet:
-- Download and extract data from original [ScanNet-V2 preprocess](https://github.com/ScanNet/ScanNet/tree/master/SensReader/python).
+- Download and extract data from the original [ScanNet-V2 preprocess](https://github.com/ScanNet/ScanNet/tree/master/SensReader/python).
   
 - Dataset structure:
   ```
