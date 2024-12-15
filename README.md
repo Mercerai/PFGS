@@ -12,6 +12,11 @@
 
 
 If you found this project useful, please [cite](#citation) us in your paper, this is the greatest support for us.
+### Important Update at December 2024
+!!!! UPDATE
+(1) We fixed a bug in rasterization which might cause an error when compiling for some specific machines. 
+(2) Please directly install the diff-gaussian-rasterization function from this repo, which differs slightly from the original feature-gs.
+(3) If someone wants to obtain the complete dataset that we preprocess in our certain data structures, please email us, and we will send it to you.
 
 ### Requirements (Tested on 1 * RTX3090)
 - Linux
@@ -44,7 +49,10 @@ $ conda env create -f environment.yml
 ```shell
 pip install ./submodules/diff-gaussian-rasterization
 ```
-You can customize `NUM_SEMANTIC_CHANNELS` in `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` for any number of feature dimensions that you want. ⭐ Thanks to the diff-gaussian-rasterization code from [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs), which is a great help for our work.
+You can customize `NUM_SEMANTIC_CHANNELS` in `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` for any number of feature dimensions that you want. 
+
+
+[Attention~] This rasterization is borrowed from [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs) but with some minor differences. Please directly install the rasterization from this repo. 
 
 ### Build third_party optionally
 ```
